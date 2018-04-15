@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
 @Component( {
 	selector:        "pizza-list",
 	styles:          [
-			`
+		`
 			:host {
 				display:    flex;
 				flex:       1 0 40%;
@@ -52,7 +52,8 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
 			                 <h2>Store inventory</h2>
 			                 <div *ngFor="let pizza of pizzas">
 				                 <p>{{ pizza.name }}</p>
-				                 <span>{{ pizza.toppings | join }}</span>
+				               
+	                                <span>{{ pizza.toppings | join }}</span>
 			                 </div>
 		                 </div>
 	                 `,
